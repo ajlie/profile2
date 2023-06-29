@@ -1,0 +1,127 @@
+/*font imports */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/*typing effect import*/
+@keyframes typing {
+    from { width: 0}
+    to { width: 100%}
+}
+
+body {
+    background-color: #daf1de;
+}
+
+#top{
+    background-image: url("imgs/main/corkboard.jpg");
+    height: 600px;
+}
+
+section {
+    display:block;
+    background-color:#daf1de ;
+}
+
+#name{
+    /* basic color & font for name */
+    color: whitesmoke;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 75px;
+    text-align: center;
+    padding: .15em;
+
+    /*glow effect*/
+    text-shadow:
+        0 0 7px #0b2b26,
+        0 0 10px #fff;
+
+    /*typewriting effect from css tricks */
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end);
+}
+
+/* pins & poloroids css */ 
+.pins {
+    cursor: move;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+}
+
+.whiteframe{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+}
+
+.subtitles{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.subtitles:hover{
+    color:#235347;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pics {
+    width: 90%;
+    height: 90%;
+    padding: 15px;
+ }
+
+#photography {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    left: 3%;
+    top: 12%;
+  }
+
+#interests {
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    left: 27%;
+    top: 20%;
+  }
+
+#placeholder {
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    left: 51%;
+    top: 16%;
+  }
+
+#music {
+    position: absolute;
+    z-index: 6;
+    text-align: center;
+    left: 76%;
+    top: 22%;
+  }
+
+/* carousel css */
+
+#carousel {
+    height: 600px;
+    text-align: center;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 600px;
+}
+
+.carouselpics {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
