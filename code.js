@@ -3,7 +3,6 @@
 //set drag element to a specfic ID from HTML
 dragElement(document.getElementById("photography"));
 dragElement(document.getElementById("interests"));
-dragElement(document.getElementById("placeholder"));
 dragElement(document.getElementById("music"));
 
 
