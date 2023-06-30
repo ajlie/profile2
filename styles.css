@@ -178,3 +178,384 @@ section {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
+
+/* music section */
+#musicbox{
+    width: 800px;
+    height: 650px;
+    position:absolute;
+    left: 60px;
+    top: 1550px;
+    text-align: center;
+
+}
+
+#musictext {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 100px;
+}
+
+#cover{
+    height: 450px;
+    width: 450px;
+}
+
+#song{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+}
+
+/*vinyl css coding artist on yt*/
+
+#vinyl{
+    height: 780px;
+}
+
+.player {
+    background-color:#163832 ;
+    width: 500px;
+    height: 330px;
+    position: absolute;
+    left: 65%;
+    padding-bottom: 60px;
+    top: 1750px;
+    border-radius: 8px;
+    box-shadow: 0 8px 0 0 #051f20;
+}
+
+.record {
+    height: 280px;
+    width: 280px; 
+    background-color: black; 
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 20px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.record:before, 
+.record:after {
+    position :absolute;
+    content:"";
+    border: 5px solid transparent;
+    border-top-color: darkgrey;
+    border-bottom-color: darkgrey;
+    border-radius: 50%;
+}
+
+.record:before{
+    height: 200px;
+    width: 200px;
+}
+
+.record:after{
+    height: 160px;
+    width: 160px;
+}
+
+.label {
+    background-color: #000;
+    height: 15px;
+    width: 15px;
+    border: 20px solid yellow;
+    border-radius: 50%;
+
+}
+
+.tone-arm{
+    height: 150px;
+    width: 6px;
+    background-color: white;
+    position: absolute;
+    top: 35px;
+    right: 110px; 
+    transition: 1s;
+    transform-origin: top;
+}
+
+.control{
+    background-color: silver;
+    height: 50px;
+    width: 50px;
+    border: 10px solid white;
+    position:absolute;
+    border-radius: 50%;
+    top: -16px;
+    left: -16px;
+}
+
+
+
+.tone-arm:before{
+    content:"";
+    height:70px;
+    width: 6px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(30deg);
+    bottom: -60px;
+    right: 17px;
+}
+
+.tone-arm:after{
+    content:"";
+    position: absolute;
+    height: 0;
+    width: 16px;
+    border-top: 20px solid  #8eb69b;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    top: 200px;
+    right: 33px;
+    transform: rotate(30deg);
+}
+
+.btn {
+    height: 30px;
+    width: 30px;
+    background-color: #8eb69b ;
+    position:absolute;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 40px; 
+    border: none; 
+    border: 3.5px solid #2b6758;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+.slider{
+    -webkit-appearance: none;
+    background-color: #2b6758;
+    outline: none;
+    appearance: none;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width: 10px;
+    height: 12px;
+    background-color: white;
+    cursor:pointer;
+
+}
+
+.play{
+    transform: rotate(30deg);
+    transform-origin: top;
+    transition: 1s;
+}
+
+.on{
+    animation: spin 3s 1s linear infinite;
+}
+
+@keyframes spin{
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+/* hobby section */
+#hobby{
+    height: 750px;
+    background-color: #163832;
+}
+
+.random{
+  width: 200px;
+  height: 600px; 
+  position: absolute;
+  left: 80px;
+  top: 2350px;
+  color:white;
+  text-shadow:
+    0 0 7px #0b2b26,
+    0 0 10px #fff;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 80px;
+  font-family: 'Patrick Hand', cursive;
+
+}
+
+/* flip card */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    position: absolute;
+    top: 2400px;
+    left: 300px;
+  }
+  
+  .flip-card1 {
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    position: absolute;
+    top: 2400px;
+    left: 900px;
+  }
+
+
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    width: 400px;
+    height: 500px;
+
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #051f20;
+    transform: rotateY(180deg);
+    width: 400px;
+    height: 500px;
+    color: white;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    width: 400px;
+    height: 500px;
+
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #051f20;
+    transform: rotateY(180deg);
+    width: 400px;
+    height: 500px;
+    color: white;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+
+  }
+
+
+/*card 1*/
+
+ /* Style the front side (fallback if image is missing) */
+ .flip-card-front1 {
+  background-color: #bbb;
+  color: black;
+  width: 400px;
+  height: 500px;
+
+}
+
+/* Style the back side */
+.flip-card-back1 {
+  background-color: #051f20;
+  transform: rotateY(180deg);
+  width: 400px;
+  height: 500px;
+  color: white;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front1 {
+  background-color: #bbb;
+  color: black;
+  width: 400px;
+  height: 500px;
+
+}
+
+/* Style the back side */
+.flip-card-back1 {
+  background-color: #051f20;
+  transform: rotateY(180deg);
+  width: 400px;
+  height: 500px;
+  color: white;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+
+}
+  
+
+  .hobbypics{
+    width: 400px;
+    height: 500px;
+  }
+
+  .hobby-text{
+    font-size: 80px;
+    padding: 30px;
+  }
+
+  .hobby-subtitle{
+    font-size: 40px;
+    padding: 20px;
+  }
